@@ -3,7 +3,7 @@
 # 📖Guide Complet d'Apprentissage
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status: Docs](https://img.shields.io/badge/Status-En%20Cours-brightgreen)](https://docs.docker.com/get-started/)
+[![Docs: Docker](https://img.shields.io/badge/Status-En%20Cours-brightgreen)](https://docs.docker.com/get-started/)
 
 > **Votre passerelle vers la maîtrise de Docker** - Un repository éducatif soigneusement structuré pour comprendre et pratiquer la conteneurisation comme un expert.
 
