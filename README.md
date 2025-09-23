@@ -14,3 +14,8 @@
 | • **Pédagogie Progressive** : Du fondamental à l'avancé | • **Théorie Solide** : Concepts expliqués clairement |
 | • **Pratique Immédiate** : Commandes et exercices concrets | • **Best Practices** : Méthodes professionnelles |
 | • **Structure Optimale** : Organisation logique et intuitive | • **Exemples Réels** : Cas d'usage pratiques 
+## 📖 Organisation du Savoir
+📦 docker-apprentissage
+├── 🧠 learn.md # Fondamentaux théoriques et concepts clés
+├── 🛠️ practise.md # Commandes pratiques et exercices
+└── 💡 examples/ # Projets démonstratifs (à venir)
