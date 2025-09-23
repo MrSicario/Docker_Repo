@@ -13,5 +13,4 @@
 |----------------------|------------------------|
 | • **Pédagogie Progressive** : Du fondamental à l'avancé | • **Théorie Solide** : Concepts expliqués clairement |
 | • **Pratique Immédiate** : Commandes et exercices concrets | • **Best Practices** : Méthodes professionnelles |
-| • **Structure Optimale** : Organisation logique et intuitive | • **Exemples Réels** : Cas d'usage pratiques |
-Je vous presente un petit repertoire sur la Dockerisation , c'est juste un petitaide 
+| • **Structure Optimale** : Organisation logique et intuitive | • **Exemples Réels** : Cas d'usage pratiques 
