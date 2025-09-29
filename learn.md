@@ -1,15 +1,20 @@
 # 🐳 Docker - Cours et Connaissances
 
-## 1. Qu'est-ce que Docker ?
+## 1. Qu'est-ce que Docker ? A quoi sert t-il ? Ses Avantages et ses incovenients ...
 
 ### Définition
-Docker est une plateforme de conteneurisation qui permet de créer, déployer et exécuter des applications dans des conteneurs.
+Docker est une plateforme de conteneurisation ouverte pour le développement, la livraison ou le déployement et l'exécution d'applications dans des conteneurs.
+
+## À quoi peut me servir Docker ?
+Livraison rapide et cohérente de vos applications ( permet aux développeurs de travailler dans des environnements standardisés à l'aide de conteneurs locaux)
+Déploiement et mise à l'échelle réactifs (  permet une grande portabilité des charges de travail ) 
+Exécuter davantage de charges de travail sur le même matériel ( permett d'optimiser la capacité de votre serveur pour atteindre vos objectifs métier )
 
 ### Avantages Principaux
 - **Isolation** : Chaque application tourne dans son environnement
 - **Portabilité** : Fonctionne de la même façon sur tous les systèmes
 - **Légèreté** : Partage le noyau du système hôte
-- **Rapidité** : Démarrage en quelques secondes
+- **Rapidité** : Démarrage en quelques secondes.
 
 ### Différence avec les Machines Virtuelles
 | Docker (Conteneurs) | Machines Virtuelles |
@@ -74,5 +79,3 @@ Docker est une plateforme de conteneurisation qui permet de créer, déployer et
 - Rollback facile
 
 ---
-
-*Document en cours d'enrichissement...*
