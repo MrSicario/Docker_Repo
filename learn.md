@@ -5,7 +5,7 @@
 ### Définition
 Docker est une plateforme de conteneurisation ouverte pour le développement, la livraison ou le déployement et l'exécution d'applications dans des conteneurs.
 
-## À quoi peut me servir Docker ?
+### À quoi peut me servir Docker ?
 Livraison rapide et cohérente de vos applications ( permet aux développeurs de travailler dans des environnements standardisés à l'aide de conteneurs locaux)
 Déploiement et mise à l'échelle réactifs (  permet une grande portabilité des charges de travail ) 
 Exécuter davantage de charges de travail sur le même matériel ( permett d'optimiser la capacité de votre serveur pour atteindre vos objectifs métier )
