@@ -1,5 +1,11 @@
 # 🛠️ Docker - Pratique et Commandes
 
+> **" 💡 La meilleure façon d'apprendre est de pratiquer "** 
+
+
+
+
+
 ## Commandes de base
 
 ### Gestion des conteneurs
