@@ -42,17 +42,26 @@ Exécuter davantage de charges de travail sur le même matériel ( permett d'opt
 - Contient des images officielles et communautaires
 - Alternative : Docker Registry privé
 
+### Docker Volume 
+- un mécanisme de stockage persistant pour les conteneurs, permettant aux données de survivre même après la suppression d'un conteneur
+-  garantit que les données critiques, comme celles d'une base de données, ne sont pas perdues et peuvent être facilement partagées entre les conteneurs ou déplacées vers d'autres hôtes ..
+
+### Docker Network 
+- mécanisme qui définit et gère des zones de communication pour les conteneurs Docker
+- permettant d'échanger des données entre eux, avec la machine hôte et des services externes ..
+
+
 ## 3. Architecture Docker
 
 ### Composants Principaux
-1. **Docker Daemon** : Processus background qui gère les conteneurs...r ( dockerd) écoute les requêtes de l'API Docker et gère les objets Docker tels que les images, les conteneurs, les réseaux et les volumes
+1. **Docker Daemon** : Processus background qui gère les conteneurs...( dockerd) écoute les requêtes de l'API Docker et gère les objets Docker tels que les images, les conteneurs, les réseaux et les volumes
 2. **Docker Client** : Interface en ligne de commande... (docker) est le principal moyen par lequel de nombreux utilisateurs interagissent avec Docke
 3. **Docker Registry** : Stockage et distribution d'images...
 
 ### Flux de Travail
 1. Le client envoie une commande au Daemon
 2. Le Daemon télécharge l'image depuis le Registry
-3. Le Daemon crée et exécute le conteneur
+3. Le Daemon crée et exécute le conteneur....
 
 ## 4. Écosystème Docker
 
