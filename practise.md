@@ -59,22 +59,49 @@ docker logs mon-conteneur
 
 ### Gestion d'image
 ```
-# Creer une image:
+# Creer une image ( la presence d'un dockerfile sera necessaire ) :
 docker build -t nomimage 
 
 # Supprimer une images
 doker rmi monimage
 
-# Télécharger une image
-docker pull nginx:latest
-
 # Lister les images locales
 docker images
 
-# Construire une image depuis un Dockerfile
-docker build -t mon-image .
+# Telecharge une images depuis un registre (par defaut :docker hub) latest version
+docker pull nom_images
 
-# Interface graphique pour gérer Docker et son image :
+# Crée une nouvelle image à partir d’un conteneur en cours d'exécution
+docker commit
+
+# Crée une nouvelle image avec un message de description.
+docker commit -m "message"
+```
+#Utilisation de docker tag dans une image
+
+.Télécharger une image Docker avec le tag spécifié.
+```
+docker pull nom_image:tag
+```
+- exemple: 
+```
+docker pull ubuntu:22.04
+```
+Associe un tag à une image Docker existante
+```
+docker tag
+```
+Crée une image Docker avec un tag spécifique à partir du Dockerfile dans le répertoire
+```
+docker build -t nom_image .
+```
+Crée une image Docker à partir d’un Dockerfile.
+```
+ docker build 
+```
+
+Interface graphique pour gérer Docker et son image :
+```
 docker volume create portainer_data
 docker run -d -p 9000:9000 \
   --name=portainer \
@@ -82,13 +109,16 @@ docker run -d -p 9000:9000 \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v portainer_data:/data \
   portainer/portainer-ce
-
-# Lancer l'image avec cette interface
+```
+Lancer l'image avec cette interface
+```
 docker run -p 9000:9000 nomImage
+```
 
-# Pour accéder à L'image ( ouvrir un navigateur et taper le lien si dessous ) 
+Pour accéder à L'image ( ouvrir un navigateur et taper le lien avec le port configurer ) 
+```
 http://localhost:9000
-
+```
 
 
 
