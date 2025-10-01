@@ -1,10 +1,8 @@
 # 🛠️ Docker - Pratique et Commandes
+>  ⛔ Veuillez voir la page d'installation avant de voir la pratique 
+<hr>
 
-> **" 💡 La meilleure façon d'apprendre est de pratiquer "** 
-
-
-
-
+<div align="center">" 💡 La meilleure façon d'apprendre est de pratiquer "</div> 
 
 ## Commandes de base
 
