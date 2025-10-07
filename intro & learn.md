@@ -32,6 +32,9 @@ Exécuter davantage de charges de travail sur le même matériel ( permett d'opt
 - Environnement isolé et éphémère
 - Peut être démarré, arrêté, supprimé
 
+⛔ A savoir : 
+Pour avoir des conteneurs ,il faut d'abord avoir des images de base pour le conteneur.(on peut trouver les images sur dockehub).
+
 ### Dockerfile
 - Fichier texte contenant les instructions pour construire une image , grâce à ce fichier que vous allez pouvoir automatiser la création d'une image
 - Définit l'environnement d'exécution
