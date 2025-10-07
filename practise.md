@@ -67,6 +67,8 @@ doker rmi monimage
 
 # Lister les images locales
 docker images
+docker image ls
+docker images
 
 # Telecharge une images depuis un registre (par defaut :docker hub) latest version
 docker pull nom_images
