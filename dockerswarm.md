@@ -1,5 +1,6 @@
 ## 💥 Docker swarm:  
 
+
 C'est un groupe de machines executant le moteur Docker et faisant partie du meme cluster.
 
 - elle est composer de:
