@@ -10,8 +10,8 @@ C'est un groupe de machines executant le moteur Docker et faisant partie du meme
 
 -> cluster: les machine qui executer les commandes appeler manager.
 
-## 🎛️ Commande en docker Swar  
-# Creer un cluster swarm 
+## 🎛️ Commande en docker Swarm  
+## Creer un cluster swarm 
 - Initier le mode swarm:
 ```
  docker swarm init  
@@ -38,7 +38,7 @@ docker node ls
 ```
 <hr>
 
-# Deployement  :
+## Deployement  :
  Prerequis 🛄:
  - Creeation du dossier avec Dockerfile , builder sois meme son images et l'implementer dans fichier .yml
 ```
@@ -69,4 +69,24 @@ docker service ps [nom_du_dossier_project]
 - Mise a jour d un service:
 ```
 -- docker service update --force [nom_du_dossier_project] 
+```
+## MONITORING Swarm 🔊 :
+```
+# Voir les logs d'un service
+docker service logs web
+# Voir les logs en temps réel
+docker service logs -f web
+# Statistiques des services
+docker stats $(docker service ps web -q)
+```
+## Dépannage Swarm 📥 :
+```
+# Vérifier l'état du swarm
+docker system info | grep -A 10 Swarm
+# Voir les détails d'une tâche
+docker service ps --no-trunc web
+# Inspecter les conteneurs d'un service
+docker ps --filter name=web
+# Redémarrer les tâches défaillantes
+docker service update --force web
 ```
