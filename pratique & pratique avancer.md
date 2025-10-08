@@ -46,5 +46,86 @@ docker history [image]
 ```
 docker logs –-tail 5 [conteneur]
 ```
+### VOLUMES (Storage):
+```
+docker volume create mon-vol    # Créer un volume
+docker volume ls                # Liste les volumes
+docker run -v mon-vol:/data nginx
+```
+### DOCKERFILE:
+```
+FROM node:14-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+### Build d'image:
+```
+docker build -t mon-app .          # Construit une image Docker personnalisée
+docker build -t mon-app:1.0 .     # Avec tag
+```
+### DOCKER COMPOSE:
+```
+version: '3.8'
+services:
+  web:
+    image: nginx
+    ports: ["80:80"]
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+```
+### Commandes Compose:
+```
+docker-compose up -d        # Démarre les services
+docker-compose down         # Arrête les services
+docker-compose ps           # Statut du service
+```
+### Gestion des SERVICES:
+```
+# Créer un service
+docker service create --name web -p 80:80 nginx
+# Service avec réplicas
+docker service create --name web --replicas 3 -p 80:80 nginx
+# Lister les services
+docker service ls
+# Inspecter un service
+docker service inspect web
+# Voir les tâches d'un service
+docker service ps web
+# Mettre à jour un service
+docker service update --replicas 5 web
+# Scale un service
+docker service scale web=10
+# Supprimer un service
+docker service rm web
+```
+### Commandes Stack:
+```
+# Déployer une stack
+docker stack deploy -c docker-stack.yml myapp
+# Lister les stacks
+docker stack ls
+# Lister les services d'une stack
+docker stack services myapp
+# Supprimer une stack
+docker stack rm myapp
+```
+
+### Commandes de MAINTENANCE:
+```
+# Mettre à jour un service
+docker service update --image nginx:latest web
+# Rollback d'un service
+docker service rollback web
+# Pause/resume de service
+docker service update --update-pause web
+docker service update --update-resume web
+```
+
 
 </div>
