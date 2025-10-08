@@ -1,5 +1,26 @@
 ## STACKS : Docker Compose dans Swarm 📡:
 
+
+### Commandes Stack:
+- Déployer une stack
+```
+docker stack deploy -c docker-stack.yml myapp
+```
+- Lister les stacks
+```
+docker stack ls
+```
+- Lister les services d'une stack
+```
+docker stack services myapp
+```
+- Supprimer une stack
+```
+docker stack rm myapp
+```
+
+
+
 ### Configuration d'un fchier .yml pour le stack
 - ex : stack.yml
 
