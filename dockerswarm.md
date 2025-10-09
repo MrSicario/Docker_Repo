@@ -69,7 +69,7 @@ docker service ps [nom_du_dossier_project]
 ```
 - Mise a jour d un service:
 ```
--- docker service update --force [nom_du_dossier_project] 
+docker service update --force [nom_du_dossier_project] 
 ```
 ## MONITORING Swarm 🔊 :
 ```
