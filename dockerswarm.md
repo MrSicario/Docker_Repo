@@ -71,6 +71,7 @@ docker service ps [nom_du_dossier_project]
 ```
 docker service update --force [nom_du_dossier_project] 
 ```
+
 ## MONITORING Swarm 🔊 :
 ```
 # Voir les logs d'un service
@@ -80,6 +81,7 @@ docker service logs -f web
 # Statistiques des services
 docker stats $(docker service ps web -q)
 ```
+
 ## Dépannage Swarm 📥 :
 ```
 # Vérifier l'état du swarm
@@ -90,4 +92,24 @@ docker service ps --no-trunc web
 docker ps --filter name=web
 # Redémarrer les tâches défaillantes
 docker service update --force web
+```
+
+## Volumes Swarm 🧪 :
+```
+# Volume pour service (sur chaque nœud)
+docker service create --name db \
+  --mount type=volume,source=db-data,target=/var/lib/mysql \
+  mysql:8.0
+```
+
+## SÉCURITÉ Swarm 🔒:
+```
+# Rotation du token
+docker swarm join-token --rotate worker
+# Secrets management
+echo "mon-secret" | docker secret create db_password -
+# Service avec secret
+docker service create --name app \
+  --secret db_password \
+  nginx
 ```
