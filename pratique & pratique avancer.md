@@ -126,6 +126,30 @@ docker service rollback web
 docker service update --update-pause web
 docker service update --update-resume web
 ```
+### Optimisation 
 
-
+- Limiter les ressources
+```
+docker run --memory=512m --cpus=1.0 nginx
+```
+### Sécurité:
+- Exécuter en non-root
+```
+docker run --user 1000:1000 nginx
+```
+### Docker Hub:
+```
+docker login                  # Connexion
+docker tag app user/app       # Tagger
+docker push user/app          # Publier
+```
+### Nettoyage:
+```
+#Nettoyage complet:
+docker system prune -a
+# Nettoyage sélectif:
+docker container prune    # Containers arrêtés
+docker image prune        # Images non utilisées
+docker volume prune       # Volumes non utilisés
+```
 </div>
