@@ -8,13 +8,6 @@
 > **Votre passerelle vers la maîtrise de Docker** - Un repository éducatif soigneusement structuré pour comprendre et pratiquer la conteneurisation comme un expert.
 
 ## 📦 docker-apprentissage
-├── 🧠 learn.md # Fondamentaux théoriques et concepts clés
-
-├── 🛠️ practise.md # Commandes pratiques et exercices
-
-└── 💡 examples/ # Projets démonstratifs (à venir)
-
-
 
 ## 🎯 Objectifs Pédagogiques
   ✅ **Niveau Débutant**
